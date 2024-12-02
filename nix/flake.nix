@@ -11,6 +11,7 @@
   };
 
   outputs = { self, nixpkgs, home-manager }: {
+  	
   	homeConfigurations = {
 		"kamel@eocene" = home-manager.lib.homeManagerConfiguration {
 			pkgs = nixpkgs.legacyPackages.x86_64-linux;
